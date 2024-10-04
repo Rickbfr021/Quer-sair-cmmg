@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quer Sair cmg esse fds?</title>
+</head>
+<body>
+    <div class="box">
+        <p>Quer Sair cmg esse fds?</p>
+        <div class="button-container">
+            <button id="yes">Sim</button>
+            <button id="no">Não</button>
+        </div>
+    </div>
+
+    <script>
+        const yesButton = document.getElementById('yes');
+        yesButton.addEventListener('click', function() { 
+            alert('Aiii Siim novinha! Me manda msg respondendo que horas vc vai estar livre sua linda ❤️');
+            window.location.href = 'https://www.instagram.com/p/C9fME64OfHd/'; // Redireciona para o Instagram
+        });
+
+        const noButton = document.getElementById('no');
+        let height = window.innerHeight - 50; 
+        let width = window.innerWidth - 50; 
+
+        noButton.addEventListener('mouseover', function() { 
+            noButton.style.position = 'absolute'; 
+            noButton.style.top = Math.random() * height + 'px';
+            noButton.style.left = Math.random() * width + 'px'; 
+        });
+    </script>
+</body>
+</html>
